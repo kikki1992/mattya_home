@@ -6,7 +6,7 @@ def create_app():
     app.config.from_pyfile('config.py')
 
     # Blueprintの登録
-    from views.index import bp_index
+    from flask_app.views.index import bp_index
     app.register_blueprint(bp_index)
 
     return app
