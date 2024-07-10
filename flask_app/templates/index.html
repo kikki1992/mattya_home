@@ -3,18 +3,17 @@
     {% include "navbar.html" %}
 
     <!--Topのイラスト-->
-    <div class="container mt-6">
-        <div class="image-container">
-            <img class="col-12" src="data/images/index_1.PNG" alt="">
-            <div class="col-6 image-text">抹茶ん家の作品集</div>
-        </div>
+    <div class="image-container">
+        <img class="full-width-image" src="data/images/index_1.jpg" alt="">
+        <div class="image-text">ゆっくりしていってね！！！</div> <!--画像に文字入力した方が楽-->
     </div>
 
     <!--Works-->
-    <div class="container mt-6">
-        <div class="col-6">Works</div>
-        <div class="col-6">抹茶の主要作品</div>
+    <div id="comics" class="container mt-6">
+        <div class="sub-title">作品集</div>
+        <div class="col-6"></div>
     </div>
+    {% include "blog-card.html" %}
 
     {% include "footer.html" %}
 {% endblock %}

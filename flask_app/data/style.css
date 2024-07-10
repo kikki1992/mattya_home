@@ -1,18 +1,47 @@
 /* styles.css */
- 
+  .nav-text{
+    font-family: "Yuji Syuku", serif;
+    font-size:40px;
+  }  
+
   .image-container {
     position: relative;
     text-align: left;
     color: white;
   }
-  
-  .image-text {
-    position: absolute;
-    color: white;
-    top: 15%;
-    left: 30%;
-    font-size: 28px;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
+
+  .full-width-image {
+    width: 100%;
+    height: auto;
   }
+
+  .image-text {
+    font-family: "Yuji Syuku", serif;
+    position: absolute;
+    top: 10%; /* 画像下部からの距離 */
+    left: 60%; /* 画像の中央 */
+    transform: translateX(-50%); /* 中央揃え */
+    background-color: rgba(0, 0, 0, 0); /* 背景色（半透明） */
+    color: white; /* テキストの色 */
+    padding: 10px; /* テキストのパディング */
+    font-size: 32px; /* テキストのフォントサイズ */
+    font-weight: bold; /* テキストの太さ */
+    white-space: nowrap; /* テキストを折り返さないように */
+}
   
+  .sub-title {
+    font-family: "Yuji Syuku", serif;
+    font-size: 5vw;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .blog-card {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .blog-card img {
+    max-height: 60vh;
+    max-width: 100%;
+    border-radius: 4px;
+  }
