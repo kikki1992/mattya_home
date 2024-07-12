@@ -30,6 +30,7 @@
 }
   
   .sub-title {
+    margin-top: 30px;
     font-family: "Yuji Syuku", serif;
     font-size: 5vw;
     font-weight: 400;
@@ -41,6 +42,28 @@
     padding: 20px;
   }
   .blog-card img {
+    max-height: 60vh;
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  .survey{
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  .survey img{
+    margin-top: 20px;
+    max-height: 20vh;
+    max-width: 100%;
+    border: 5px solid rgb(209, 0, 70); /* 赤いボーダーを追加 */
+    border-radius: 15px;
+    }
+
+  .comic {
+    max-height: 80vh;
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  .comic img {
     max-height: 60vh;
     max-width: 100%;
     border-radius: 4px;

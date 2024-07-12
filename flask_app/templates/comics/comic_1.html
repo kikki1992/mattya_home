@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    {% include "navbar.html" %}
+    <div class="container">
+        <div class="col-md-4">
+            <div class="comic">
+                <p>詳細ページ　編集中</p>
+                <img src="{{ url_for('static', filename='/images/comic_1.jpg')}}" alt="">
+                <h3 class="mt-2">再録本2020~2021</h3>
+                <p>2021/6/1発行 wtr×kbn pkmn fanbook</p>
+            </div>
+        </div>
+    </div>
+
+    {% include "footer.html" %}
+{% endblock content %}

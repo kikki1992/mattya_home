@@ -4,15 +4,25 @@
 
     <!--Topのイラスト-->
     <div class="image-container">
-        <img class="full-width-image" src="data/images/index_1.jpg" alt="">
-        <div class="image-text">ゆっくりしていってね！！！</div> <!--画像に文字入力した方が楽-->
+        <img class="full-width-image" src="{{ url_for('static', filename='/images/index_1.jpg')}}" alt="">
+        <div class="image-text">ゆっくりしていってね！！！<br>
+            本の紹介と再販希望アンケート置き場
+        </div> <!--画像に文字入力した方が楽-->
     </div>
 
     <!--Works-->
     <div id="comics" class="container mt-6">
-        <div class="sub-title">作品集</div>
-        <div class="col-6"></div>
+        <div class="row">
+            <div class="col-7 sub-title">～作品集～</div>
+            <div class="col-5 text-right">
+                <a class="survey" href="https://docs.google.com/forms/d/e/1FAIpQLSdqphu2DonEXrCtZ5uUTyQbNYGPFe32kLY5sGBLBnzw_PGu8A/viewform?usp=sf_link">
+                    <img src="{{ url_for('static', filename='/images/survey_1.png')}}" alt="">
+                </a>
+            </div>
+        </div>
     </div>
+
+    
     {% include "blog-card.html" %}
 
     {% include "footer.html" %}

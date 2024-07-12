@@ -11,7 +11,7 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">     
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="data/style.css">
+        <link rel="stylesheet" href="static/style.css">
         <!-- Googleカスタムフォント -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,21 +47,33 @@
 
     <!--Topのイラスト-->
     <div class="image-container">
-        <img class="full-width-image" src="data/images/index_1.jpg" alt="">
-        <div class="image-text">ゆっくりしていってね！！！</div> <!--画像に文字入力した方が楽-->
+        <img class="full-width-image" src="static/images/index_1.jpg" alt="">
+        <div class="image-text">ゆっくりしていってね！！！<br>
+            本の紹介と再販希望アンケート置き場
+        </div> <!--画像に文字入力した方が楽-->
     </div>
 
     <!--Works-->
     <div id="comics" class="container mt-6">
-        <div class="sub-title">作品集</div>
-        <div class="col-6"></div>
+        <div class="row">
+            <div class="col-7 sub-title">～作品集～</div>
+            <div class="col-5 text-right">
+                <a class="survey" href="https://docs.google.com/forms/d/e/1FAIpQLSdqphu2DonEXrCtZ5uUTyQbNYGPFe32kLY5sGBLBnzw_PGu8A/viewform?usp=sf_link">
+                    <img src="static/images/survey_1.png" alt="">
+                </a>
+            </div>
+        </div>
     </div>
+
+    
     <div class="container mt-4">
   <div class="row">
     <!-- ブログカード1 -->
     <div class="col-md-4">
       <div class="blog-card">
-        <img src="data/images/comic_1.jpg" alt="">
+        <a href="comic_1.html/index.html">
+          <img src="static/images/comic_1.jpg" alt="">
+        </a>
         <h3 class="mt-2">再録本2020~2021</h3>
         <p>2021/6/1発行 wtr×kbn pkmn fanbook</p>
       </div>
@@ -69,7 +81,9 @@
     <!-- ブログカード2 -->
     <div class="col-md-4">
       <div class="blog-card">
-        <img src="data/images/comic_2.jpg" alt="">
+        <a href="comic_2.html/index.html">
+          <img src="static/images/comic_2.jpg" alt="">
+        </a>
         <h3 class="mt-2">竜の誓い</h3>
         <p>2021/9/12発行 wtr pkmn fanbook</p>
       </div>
@@ -77,7 +91,7 @@
     <!-- ブログカード3 -->
     <div class="col-md-4">
       <div class="blog-card">
-        <img src="data/images/comic_3.jpg" alt="">
+        <img src="static/images/comic_3.jpg" alt="">
         <h3 class="mt-2">チャンピオン TeaTime</h3>
         <p>2022/4/20発行 pkmn fanbook</p>
       </div>
@@ -89,7 +103,7 @@
     <!-- ブログカード4 -->
     <div class="col-md-4">
       <div class="blog-card">
-        <img src="data/images/comic_4.jpg" alt="">
+        <img src="static/images/comic_4.jpg" alt="">
         <h3 class="mt-2">小さな竜の決意</h3>
         <p>2022/6/19発行 wtr×kbn pkmn fanbook</p>
       </div>
@@ -97,7 +111,7 @@
     <!-- ブログカード5 -->
     <div class="col-md-4">
       <div class="blog-card">
-        <img src="data/images/comic_5.jpg" alt="">
+        <img src="static/images/comic_5.jpg" alt="">
         <h3 class="mt-2">RECORD</h3>
         <p>2022/8/21発行 イラスト本 pkmn fanbook</p>
       </div>
@@ -105,7 +119,7 @@
     <!-- ブログカード6 -->
     <div class="col-md-4">
       <div class="blog-card">
-        <img src="data/images/comic_6.jpg" alt="">
+        <img src="static/images/comic_6.jpg" alt="">
         <h3 class="mt-2">教えて!アナタの秘密の番号</h3>
         <p>2022/10/30発行 wtr×kbn pkmn fanbook</p>
       </div>
@@ -116,7 +130,7 @@
       <!-- ブログカード7 -->
       <div class="col-md-4">
         <div class="blog-card">
-          <img src="data/images/comic_7.jpg" alt="">
+          <img src="static/images/comic_7.jpg" alt="">
           <h3 class="mt-2">夢色</h3>
           <p>2023/6/25発行 wtr srni pkmn fanbook</p>
         </div>
@@ -128,15 +142,16 @@
     <!--Footer-->
 <footer id="profile" class="bg-black text-light py-4">
     <div class="container text-center">
-        <p>&copy; 2024 抹茶ん家. All rights reserved.</p> <!--&copy; は著作権マークのサイン-->
+        
         <a href="https://x.com/matukazemattya" class="text-light mx-4 col-2">
-            <img class="col-1" src="data/images/logo-white.png" alt="">
+            <img class="col-1" src="static/images/logo-white.png" alt="">
             <i class="fab fa-twitter"></i>
         </a>
         <a href="https://www.pixiv.net/users/5118267" class="text-light mx-4 col-2">
-            <img class="col-1" src="data/images/pixiv_white.png" alt="">
+            <img class="col-1" src="static/images/pixiv_white.png" alt="">
             <i class="fas fa-palette"></i>
         </a>
+        <p class="">&copy; 2024 抹茶. All rights reserved. 無断転載はご遠慮ください</p> <!--&copy; は著作権マークのサイン-->
     </div>
 </footer>
 
