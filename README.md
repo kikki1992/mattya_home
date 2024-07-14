@@ -8,7 +8,6 @@ pip freeze > requirements.txt
 
 静的サイトじゃないとrender.comでは画像表示できない 2024/07/09
 python freeze.py を実行してbuildする
-(flaskのstaticを使用していたらpathエラーになったので"static"を"data"フォルダに名前変えて実行→buildできたのでそのまま)
 
 @bp_index.route('/test.html/')
 パスにhtmlをつけないと生成されるファイルに拡張子がつかず表示されない
